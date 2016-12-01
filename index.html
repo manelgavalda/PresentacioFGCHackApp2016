@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentació FGC HackApp 2016</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>FGC HackApp 2016</h1>
+				</section>
+				<section>
+					<h1>Objectiu</h1>
+					Crear una aplicació per als usuaris del tren desde on podran compartir les seves aficions entre ells.
+				</section>
+				<section>
+					<h1>Qui som?</h1>
+					<ul>
+						<li><a href="https://es.linkedin.com/in/josep-de-cid-rodríguez-6788b4103/en">Josep de Cid</a></b></li>
+						<li><a>Franc Auxach</a></b></li>
+						<li><a href="https://www.linkedin.com/in/demian-turcan-583b26125/en">Demian Turcan</a></b></li>
+						<li><a href="https://www.linkedin.com/in/manel-gavald%C3%A0-andreu-410b72117/en">Manel Gavaldà</a></b></li>
+					</ul>
+				</section>
+				<section>
+					<h1>Descripció general</h1>
+					<p>El nostre projecte consisteix en una aplicació mòbil(de moment android), on la gent podrà accedir-hi mitjançant la seva càmara del mòbil
+					fotografiant el billet de tren que haurà comprat el mateix dia. Un cop dins l'usuari podrà compartir opinions sobre els diferents temes
+					que els altres usuaris de l'aplicació vagin creant.</p>
+				</section>
+				<section>
+					<h1>Punts importants</h1>
+					<ul>
+						<li>Permetrem que els usuaris accedeixin introduïnt les dades del billet manualment pel cas que l'usuari no pugui accedir amb la fotografía.</li>
+						<li>Un cop dins de l'aplicació l'usuari estarà connectat a una pàgina de forums on podrà crear i accedir a altres forums on els usuaris crearàn
+						entrades on podràn compartir opinions i estar entretinguts durant el seu viatge.</li>
+						<li>Per evitar informació innecesaria els forums i les seves entrades és borraràn al final de cada día, i al dia següent els pròxims usuaris de tren
+						que usin l'aplicació podràn crear les seves discussions.</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Estructura de l'aplicació</h1>
+					<li>Un cop dins l'aplicació l'usuari podrà navegar entre els diferents menús de l'aplicació i les entrades que tindran cada fòrum,
+					on cada fòrum formarà part d'una categoría(llibres,pel·lícules,esports...).</li>
+					<li>En la part esquerra de la pantalla tindrà un menú desplegable on hi hauràn varies funcions de l'aplicació(Forums,buscar per categoría,compartir,etc...),</li>
+				</section>
+				<section>
+					<section>
+						<h1>Estructura</h1>
+						<small>
+						<ul>
+							<li>Pantalla de càrrega</li>
+								<li>Login</li>
+								<ul>
+									<li>Menú principal</li>
+									<ul>
+										<li>Llista tops</li>
+										<li>Navigació</li>
+										<ul>
+											<li>Categories</li>
+												<ul>
+												<li>Llibres</li>
+												<li>Música</li>
+												<li>Cine</li>
+												<li>Jocs</li>
+												<li>Esports</li>
+												</ul>
+											<li>Settings</li>
+											<li>About</li>
+											<li>Share</li>
+											<li>FAQ</li>
+											<li>Quit</li>
+											</ul>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+							</small>
+						<p>Baix teniu una captura dins l'aplicació.</p>
+						<a href="#" class="navigate-down">
+							<img width="17" height="23" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<img width="400" height="650" data-src="pictures/Aplicacio.png">
+					</section>
+				</section>
+				<section>
+					<h1>Programari utilitzat</h1>
+
+					<p>Bàsicament l'aplicació està feta usant:</p>
+					<ul>
+						<li>Back-End -> Ruby on Rails</li>
+						<li>Front-End -> Android</li>
+						<li>Servidor -> Heroku</li>
+					</ul>
+					<p>Si el projecte us agrada, més avant podem afegir més disponibilitat amb altres dispositius(IOs...).</p>
+
+				</section>
+				<section>
+					<h1>Funcionament bàsic</h1>
+					<p>Tenim una api creada amb ruby on rails que accedix a un servidor allotjat a heroku(de moment), i on hem creat la part visual per android.</p>
+				</section>
+				<section>
+					<h1>Referències</h1>
+					<ul>
+						<li><b>Github: <a href="https://github.com/JosepRivaille/FGCHackApp2016">FGCHackApp2016</a></b></li>
+						<li><b>Email: <a>ratchitechstudio@gmail.com</a></b></li>
+					</ul>
+				</section>
+				<section>
+					<h1>Per acabar</h1>
+					<p>Aquesta només és una idea del projecte ja que per qüestió de temps i experiència, no hem pogut avançar més,
+					i creiem que amb el que tenim de moment ja us podeu fer una idea de com funcionaria l'aplicació un cop finalitzada.
+					Per supost si teniu qualsevol dubte o sugerència us agraïriem que ens ho fesiu saber a partir de l'adreça proporcionada en la diapositiva anterior.</p>
+					<p>Per últim agraïr el vostre suport i esperem resposta per continuar amb el projecte :).</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
