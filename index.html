@@ -26,81 +26,89 @@
 			<div class="slides">
 				<section>
 					<h1>FGC HackApp 2016</h1>
+					<h2>TraiNook</h2>
+					<img width="400" height="400" data-src="pictures/Logo_tren2.png">
 				</section>
 				<section>
 					<h1>Objectiu</h1>
-					Crear una aplicació per als usuaris del tren desde on podran compartir les seves aficions entre ells.
+					Crear una aplicació per als usuaris dels FGC desde la qual podran compartir les seves aficions interactuant entre ells.
 				</section>
 				<section>
 					<h1>Qui som?</h1>
 					<ul>
-						<li><a href="https://es.linkedin.com/in/josep-de-cid-rodríguez-6788b4103/en">Josep de Cid</a></b></li>
-						<li><a>Franc Auxach</a></b></li>
-						<li><a href="https://www.linkedin.com/in/demian-turcan-583b26125/en">Demian Turcan</a></b></li>
-						<li><a href="https://www.linkedin.com/in/manel-gavald%C3%A0-andreu-410b72117/en">Manel Gavaldà</a></b></li>
+						<li><a href="https://es.linkedin.com/in/josep-de-cid-rodríguez-6788b4103/en">Josep de Cid</a> -> Estudiant Enginyeria Informàtica UPC Barcelona</li>
+						<li><a href="https://github.com/francauxach">Franc Auxach</a> -> Estudiant CFGS DAM IES de l'Ebre Tortosa</li>
+						<li><a href="https://www.linkedin.com/in/demian-turcan-583b26125/en">Demian Turcan</a> -> Estudiant CFGS Infografia 3D Escola d'Art i Disseny Reus</li>
+						<li><a href="https://www.linkedin.com/in/manel-gavald%C3%A0-andreu-410b72117/en">Manel Gavaldà</a> -> Estudiant CFGS DAM IES de l'Ebre Tortosa</li>
 					</ul>
 				</section>
 				<section>
 					<h1>Descripció general</h1>
-					<p>El nostre projecte consisteix en una aplicació mòbil(de moment android), on la gent podrà accedir-hi mitjançant la seva càmara del mòbil
-					fotografiant el billet de tren que haurà comprat el mateix dia. Un cop dins l'usuari podrà compartir opinions sobre els diferents temes
-					que els altres usuaris de l'aplicació vagin creant.</p>
+					<p>El nostre projecte consisteix en una aplicació mòbil (de moment android), on la gent podrà accedir-hi mitjançant l'escaneig del bitllet de tren que haurà comprat el mateix dia amb la seva càmera del mòbil.
+						Un cop dins l'usuari podrà compartir opinions sobre les diferents categories d'entreteniments que els altres usuaris de l'aplicació vagin creant.</p>
 				</section>
 				<section>
 					<h1>Punts importants</h1>
 					<ul>
-						<li>Permetrem que els usuaris accedeixin introduïnt les dades del billet manualment pel cas que l'usuari no pugui accedir amb la fotografía.</li>
-						<li>Un cop dins de l'aplicació l'usuari estarà connectat a una pàgina de forums on podrà crear i accedir a altres forums on els usuaris crearàn
-						entrades on podràn compartir opinions i estar entretinguts durant el seu viatge.</li>
-						<li>Per evitar informació innecesaria els forums i les seves entrades és borraràn al final de cada día, i al dia següent els pròxims usuaris de tren
-						que usin l'aplicació podràn crear les seves discussions.</li>
+						<li>Permetrem que els usuaris accedeixin introduïnt les dades del billet manualment pel cas que l'usuari no pugui accedir amb l'escaneig del bitllet.</li>
+						<li class="fragment">Un cop dins de l'aplicació l'usuari estarà connectat a una pàgina de fòrums on podrà crear i accedir a altres fòrums que contindran les seves
+						entrades (diferents opinions sobre el fòrum).</li>
+						<li class="fragment">Cada fòrum està lligat a una categoria, com podria ser la lectura, els esports, la música, el cinema...</li>
+						<li class="fragment">Per evitar informació innecesària, aquestes entrades és borraran al final del dia, i l'endemà els pròxims usuaris
+						que usin l'aplicació podràn crear-ne de noves.</li>
 					</ul>
 				</section>
 				<section>
 					<h1>Estructura de l'aplicació</h1>
-					<li>Un cop dins l'aplicació l'usuari podrà navegar entre els diferents menús de l'aplicació i les entrades que tindran cada fòrum,
-					on cada fòrum formarà part d'una categoría(llibres,pel·lícules,esports...).</li>
-					<li>En la part esquerra de la pantalla tindrà un menú desplegable on hi hauràn varies funcions de l'aplicació(Forums,buscar per categoría,compartir,etc...),</li>
+					<p>Un cop dins de l'aplicació l'usuari podrà navegar entre els diferents menús i les entrades que tindrà cada fòrum.</p>
+					<p>A la part esquerra de la pantalla tindrà un menú desplegable on hi hauràn varies funcions de l'aplicació(Fòrums, buscar per categoría, compartir...)</p>
 				</section>
 				<section>
 					<section>
 						<h1>Estructura</h1>
 						<small>
-						<ul>
-							<li>Pantalla de càrrega</li>
+							<ul>
+								<li>Pantalla de càrrega</li>
 								<li>Login</li>
+								<li>Menú principal</li>
 								<ul>
-									<li>Menú principal</li>
+									<li>Llista de tops</li>
+									<li>Menu de navegació</li>
 									<ul>
-										<li>Llista tops</li>
-										<li>Navigació</li>
-										<ul>
-											<li>Categories</li>
-												<ul>
-												<li>Llibres</li>
-												<li>Música</li>
-												<li>Cine</li>
-												<li>Jocs</li>
-												<li>Esports</li>
-												</ul>
-											<li>Settings</li>
-											<li>About</li>
-											<li>Share</li>
-											<li>FAQ</li>
-											<li>Quit</li>
-											</ul>
+										<li>All forums</li>
+										<li>Search by categories</li>
+										<li>Trending forums</li>
+										<li>Random forums</li>
+										<li>Share</li>
+										<li>About</li>
 									</ul>
 								</ul>
-							</li>
-						</ul>
-							</small>
-						<p>Baix teniu una captura dins l'aplicació.</p>
+							</ul>
+						</small>
+						<p>A continuació mostrarem captures de l'aplicació i esbossos d'algunes parts:</p>
 						<a href="#" class="navigate-down">
 							<img width="17" height="23" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
 					<section>
-						<img width="400" height="650" data-src="pictures/Aplicacio.png">
+						<h2>Pantalla de carga</h2>
+						<img width="350" height="500" data-src="pictures/splashart.jpeg">
+					</section>
+					<section>
+						<h2>Login</h2>
+						<img width="800" height="500" data-src="pictures/login.jpg">
+					</section>
+					<section>
+						<h2>Menu de navegació</h2>
+						<img width="350" height="500" data-src="pictures/Aplicacio.png">
+					</section>
+					<section>
+						<h2>Llista de fòrums</h2>
+						<img width="350" height="500" data-src="pictures/all_forums.jpeg">
+					</section>
+					<section>
+						<h2>Informació del fòrum (entrades)</h2>
+						<img width="350" height="500" data-src="pictures/forum_entries.jpeg">
 					</section>
 				</section>
 				<section>
@@ -116,8 +124,18 @@
 
 				</section>
 				<section>
-					<h1>Funcionament bàsic</h1>
-					<p>Tenim una api creada amb ruby on rails que accedix a un servidor allotjat a heroku(de moment), i on hem creat la part visual per android.</p>
+					<section>
+						<h1>Funcionament bàsic</h1>
+						<p>Tenim una API creada amb Ruby on Rails que accedeix a un servidor gratuït allotjat a Heroku (de moment).</p>
+						<p>Cal tindre en compte que, momentàniament, si es volen afegir dades a la base de dades s'han de fer peticions al servidor mitjançant un programari extern.</p>
+						<a href="#" class="navigate-down">
+							<img width="17" height="23" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Utilitzant postman per crear un nou fòrum</h2>
+						<img data-src="pictures/postman.png">
+					</section>
 				</section>
 				<section>
 					<h1>Referències</h1>
@@ -128,10 +146,13 @@
 				</section>
 				<section>
 					<h1>Per acabar</h1>
-					<p>Aquesta només és una idea del projecte ja que per qüestió de temps i experiència, no hem pogut avançar més,
-					i creiem que amb el que tenim de moment ja us podeu fer una idea de com funcionaria l'aplicació un cop finalitzada.
-					Per supost si teniu qualsevol dubte o sugerència us agraïriem que ens ho fesiu saber a partir de l'adreça proporcionada en la diapositiva anterior.</p>
-					<p>Per últim agraïr el vostre suport i esperem resposta per continuar amb el projecte :).</p>
+					<p>Aquesta només és una idea del projecte ja que per qüestió de temps i de poca experiència, no hem pogut avançar més,
+					i creiem que amb el que tenim de moment ja us podeu fer una idea de com funcionaria l'aplicació un cop finalitzada.</p>
+					<p>Per supost si teniu qualsevol dubte o suggeriment us agraïríem que ens ho fèssiu saber.</p>
+					<p>Per últim agraïr també el vostre suport i la possibilitat que ens heu donat per participar al nostre primer concurs :)</p>
+				</section>
+				<section>
+					<img width="400" height="400" data-src="pictures/Logo_tren2.png">
 				</section>
 			</div>
 		</div>
